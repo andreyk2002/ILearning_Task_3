@@ -1,4 +1,4 @@
-package by.itransition.ilearning.package by.itransition.ilearning.task_3;
+package game;
 
 import java.util.*;
 
@@ -23,14 +23,14 @@ public class Game {
 		return true;
 	}
 	
-	public static void main(String[] argc) throws NoSuchAlgorithmException {
+	public static void main(String[] argc) {
 		if(!checkArguments(argc)) {
 			return;
 		}
 		int choice;
 		int computerMove = new Random().nextInt(argc.length - 1) + 1;
-		Encryptor e = new Encryptor();
 		try (Scanner s = new Scanner(System.in)) {
+			Encryptor e = new Encryptor();
 			String hmac = e.bytesToHex(e.getHmac(argc[computerMove - 1]));
 			System.out.println("HMAC :\n" + hmac);
 			showMenu(argc);
