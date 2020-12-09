@@ -1,4 +1,4 @@
-package by.itransition.ilearning.rcp_game;
+package by.itransition.ilearning.task_3;
 
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
