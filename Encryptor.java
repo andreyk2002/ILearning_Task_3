@@ -1,4 +1,4 @@
-package by.itransition.ilearning.task_3;
+package game;
 
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
