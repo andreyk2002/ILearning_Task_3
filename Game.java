@@ -8,7 +8,7 @@ public class Game {
 
 	public static boolean checkArguments(String[]argc) {
 		if (argc.length < 3) {
-			System.out.println("usage : java -jar arguments");
+			System.out.println("usage : java -jar Game.jar arguments");
 			System.out.println("count of arguments should an odd number >= 2");
 			return false;
 		}
